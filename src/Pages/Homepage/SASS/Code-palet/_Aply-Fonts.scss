@@ -1,0 +1,6 @@
+@mixin AplyFont($size, $clr, $fntwt, $fntfmly) {
+  font-size: $size;
+  color: $clr;
+  font-weight: $fntwt;
+  font-family: $fntfmly;
+}
