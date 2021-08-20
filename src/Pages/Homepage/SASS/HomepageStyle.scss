@@ -1,4 +1,7 @@
-@import "./Code-palet/Aply-Fonts";
+@import "../../../Styles/Code-palet/Aply-Fonts";
+.main-homepage {
+  position: relative;
+}
 .parent {
   display: flex;
   justify-content: space-around;
@@ -6,7 +9,8 @@
   flex-wrap: wrap;
   @media all and (max-width: 600px) {
     .parent {
-      height: 800px;
+      height: 100vh;
+      width: 100vw;
     }
   }
   $font-family: "Poppins", sans-serif;
@@ -33,6 +37,15 @@
     #subtitle {
       font-weight: bold;
       margin-top: 0px;
+      color: linear-gradient(
+        to right,
+        #cb9b51 22%,
+        #f6e27a 45%,
+        #f6f2c0 50%,
+        #f6e27a 55%,
+        #462523 78%,
+        #462523 100%
+      );
     }
     .cta-button {
       height: 50px;
@@ -62,7 +75,7 @@
         flex-direction: column;
         justify-content: space-between;
         .box {
-          @include AplySize(3em, 20.4em, transparent);
+          @include AplySize(3em, 15em, transparent);
           display: flex;
           .icon {
             @include AplySize(1.5em, 1.5em, rgb(0, 255, 0));

@@ -1,0 +1,23 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  width: 99%;
+  padding: 7px 0 0 7px;
+}
+
+.icon {
+  height: 2em;
+  width: 2em;
+  background-color: lime;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=Navbar.css.map */

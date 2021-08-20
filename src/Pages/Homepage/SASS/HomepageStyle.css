@@ -1,3 +1,7 @@
+.main-homepage {
+  position: relative;
+}
+
 .parent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,7 +15,8 @@
 
 @media all and (max-width: 600px) {
   .parent .parent {
-    height: 800px;
+    height: 100vh;
+    width: 100vw;
   }
 }
 
@@ -51,6 +56,7 @@
 .parent .child:first-child #subtitle {
   font-weight: bold;
   margin-top: 0px;
+  color: linear-gradient(to right, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #462523 78%, #462523 100%);
 }
 
 .parent .child:first-child .cta-button {
@@ -97,7 +103,7 @@
 
 .parent .child:last-child .skill-sec .box-container .box {
   height: 3em;
-  width: 20.4em;
+  width: 15em;
   background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;

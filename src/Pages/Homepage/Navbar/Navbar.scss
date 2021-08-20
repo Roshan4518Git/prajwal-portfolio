@@ -1,0 +1,18 @@
+@import "../../../Styles/Code-palet/Aply-Fonts";
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  width: 99%;
+  padding: 7px 0 0 7px;
+}
+$font-family: "Poppins", sans-serif;
+.icon {
+  @include AplySize(2em, 2em, rgb(0, 255, 0));
+  border-radius: 50%;
+  // p {
+  //   margin: 2px 0 0 3.5rem;
+  //   @include AplyFont(2em, rgb(0, 0, 0), bold, $font-family);
+  // }
+}

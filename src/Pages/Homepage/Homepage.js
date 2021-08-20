@@ -2,9 +2,11 @@ import React from "react";
 import photo from "../../Styles/photo.jpg";
 import "./SASS/HomepageStyle.css";
 import { Graphs } from "../Graphs.js";
+import Navbar from "./Navbar/Navbar";
 export const Homepage = () => {
   return (
-    <div>
+    <div className="main-homepage">
+      <Navbar />
       <div className="parent">
         <div className="child">
           <div className="main-content">
