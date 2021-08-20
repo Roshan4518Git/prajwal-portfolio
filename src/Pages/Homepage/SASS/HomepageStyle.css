@@ -69,6 +69,67 @@
   background-color: #201f1f;
 }
 
+.parent .child:last-child .skill-sec {
+  margin: 20vh 0px 0px 11px;
+  padding: 1rem;
+  font-size: 1.5em;
+  color: #f0f0f0;
+  font-weight: 100;
+  font-family: "Poppins", sans-serif;
+}
+
+.parent .child:last-child .skill-sec p {
+  font-size: medium;
+}
+
+.parent .child:last-child .skill-sec .box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.parent .child:last-child .skill-sec .box-container .box {
+  height: 3em;
+  width: 20.4em;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.parent .child:last-child .skill-sec .box-container .box .icon {
+  height: 1.5em;
+  width: 1.5em;
+  background-color: lime;
+  border-radius: 50%;
+  margin-top: 19px;
+}
+
+.parent .child:last-child .skill-sec .box-container .box .icon p {
+  margin: 0 0 0 3.5rem;
+  font-size: 0.7em;
+  color: #ebebeb;
+  font-weight: 80;
+  font-family: "Poppins", sans-serif;
+}
+
+.parent .child:last-child .skill-sec .box-container .box .box-line {
+  height: 0.5em;
+  width: 15em;
+  background-color: #292929;
+  background: -webkit-gradient(linear, left top, right top, color-stop(22%, #cb9b51), color-stop(45%, #f6e27a), color-stop(50%, #f6f2c0), color-stop(55%, #f6e27a), color-stop(78%, #462523), to(#462523));
+  background: linear-gradient(to right, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #462523 78%, #462523 100%);
+  border-radius: 2rem;
+  margin: 39px 0 0 20px;
+}
+
 .exm {
   position: relative;
   height: 300px;

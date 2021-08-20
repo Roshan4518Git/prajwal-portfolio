@@ -4,3 +4,9 @@
   font-weight: $fntwt;
   font-family: $fntfmly;
 }
+
+@mixin AplySize($height, $width, $clr) {
+  height: $height;
+  width: $width;
+  background-color: $clr;
+}
