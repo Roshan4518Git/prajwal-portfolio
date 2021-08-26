@@ -1,7 +1,7 @@
 import React from "react";
 import photo from "../../Styles/photo.jpg";
 import "./SASS/HomepageStyle.css";
-import { Graphs } from "../Graphs.js";
+import { Graphs } from "./Graphs.js";
 import Navbar from "./Navbar/Navbar";
 export const Homepage = () => {
   return (
@@ -42,7 +42,6 @@ export const Homepage = () => {
           </div>
         </div>
       </div>
-      <div className="exm"></div>
     </div>
   );
 };

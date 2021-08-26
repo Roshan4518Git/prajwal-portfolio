@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-around;
   height: 100vh;
+  width: 100vw;
   flex-wrap: wrap;
   @media all and (max-width: 600px) {
     .parent {
@@ -37,15 +38,6 @@
     #subtitle {
       font-weight: bold;
       margin-top: 0px;
-      color: linear-gradient(
-        to right,
-        #cb9b51 22%,
-        #f6e27a 45%,
-        #f6f2c0 50%,
-        #f6e27a 55%,
-        #462523 78%,
-        #462523 100%
-      );
     }
     .cta-button {
       height: 50px;
@@ -104,10 +96,4 @@
       }
     }
   }
-}
-.exm {
-  position: relative;
-  height: 300px;
-  width: 300px;
-  background-color: rgb(231, 231, 231);
 }
