@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
 import "./ProjectStyle.css";
-import num1 from "../../Styles/num1.svg";
+// import Numbers from "../../Styles/Numbers";
 export default function App() {
   gsap.registerPlugin(ScrollTrigger);
   const panels = useRef([]);
@@ -31,14 +31,13 @@ export default function App() {
   }, []);
   return (
     <div className="project-sec">
-      {/* <div className="semi-circle"></div> */}
-
       <div className="container" ref={panelsContainer}>
         <div className="title">My Projects</div>
+        <div className="semi-circle"></div>
         <div className="all-panel">
           <section className="panel blue" ref={(e) => createPanelsRefs(e, 0)}>
             <div className="project1">
-              <img src={num1} alt="logo" />
+              <img src="/Numbers/num1.svg" alt="logo" />
               <div className="proj-name">Railway Site</div>
               <div className="proj-desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
@@ -47,20 +46,56 @@ export default function App() {
             </div>
           </section>
           <section className="panel red" ref={(e) => createPanelsRefs(e, 1)}>
-            ONE
+            <div className="project1">
+              <img src="/Numbers/num2.svg" alt="logo" />
+              <div className="proj-name">Railway Site</div>
+              <div className="proj-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                ut et congue ipsum ut. Sem eget id lorem amet, eget.
+              </div>
+            </div>
           </section>
           <section className="panel orange" ref={(e) => createPanelsRefs(e, 2)}>
-            TWO
+            <div className="project1">
+              <img src="/Numbers/num3.svg" alt="logo" />
+              <div className="proj-name">Railway Site</div>
+              <div className="proj-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                ut et congue ipsum ut. Sem eget id lorem amet, eget.
+              </div>
+            </div>
           </section>
           <section className="panel purple" ref={(e) => createPanelsRefs(e, 3)}>
-            THREE
+            <div className="project1">
+              <img src="/Numbers/num4.svg" alt="logo" />
+              <div className="proj-name">Railway Site</div>
+              <div className="proj-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                ut et congue ipsum ut. Sem eget id lorem amet, eget.
+              </div>
+            </div>
           </section>
           <section className="panel green" ref={(e) => createPanelsRefs(e, 4)}>
-            FOUR
+            <div className="project1">
+              <img src="/Numbers/num5.svg" alt="logo" />
+              <div className="proj-name">Railway Site</div>
+              <div className="proj-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                ut et congue ipsum ut. Sem eget id lorem amet, eget.
+              </div>
+            </div>
           </section>
           <section className="panel gray" ref={(e) => createPanelsRefs(e, 5)}>
-            FIVE
+            <div className="project1">
+              <img src="/Numbers/num6.svg" alt="logo" />
+              <div className="proj-name">Railway Site</div>
+              <div className="proj-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                ut et congue ipsum ut. Sem eget id lorem amet, eget.
+              </div>
+            </div>
           </section>
+
           {/* <section className="panel indigo" ref={(e) => createPanelsRefs(e, 6)}>
             SIX
           </section>

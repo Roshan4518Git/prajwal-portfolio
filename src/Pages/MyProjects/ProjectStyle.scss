@@ -5,14 +5,20 @@ $font-family: "Poppins", sans-serif;
   position: relative;
 
   .container {
+    position: relative;
+    height: 100vh;
+    width: 600%;
+    flex-wrap: nowrap;
+    background-color: #1b1b1c;
+
     .title {
       // position: absolute;
       top: 0;
-      @include AplyFont(8em, #1b1b1c, bold, $font-family);
-      text-shadow: -1px 0 #d0d0d0, 0 1px #d0d0d0, 1px 0 #d0d0d0, 0 -1px #d0d0d0;
+      @include AplyFont(10rem, #ffffffde, bold, $font-family);
+      // text-shadow: -1px 0 #d0d0d0, 0 1px #d0d0d0, 1px 0 #d0d0d0, 0 -1px #d0d0d0;
       margin-left: 0.3em;
       padding-top: 0.3em;
-      letter-spacing: 0.5rem;
+      letter-spacing: 0.3rem;
     }
     .semi-circle {
       background: linear-gradient(
@@ -20,46 +26,56 @@ $font-family: "Poppins", sans-serif;
         rgba(196, 196, 196, 0.09) 0%,
         rgba(196, 196, 196, 0) 100%
       );
-      height: 40em;
-      width: 20em;
+      position: absolute;
+      top: 0;
+      height: 45em;
+      width: 25em;
+      left: 0;
       border-bottom-right-radius: 30em;
       border-top-right-radius: 30em;
     }
     // top: 0;
-    height: 100vh;
-    width: 600%;
-    flex-wrap: nowrap;
-    background-color: #1b1b1c;
 
     .all-panel {
+      position: relative;
       width: 600%;
       display: flex;
       flex-wrap: nowrap;
-      margin-top: 5em;
+      top: 2em;
+      // margin-top: 5em;
     }
     .panel {
-      @include AplySize(20em, 30em, rgb(56, 56, 56));
-      margin-left: 30vw;
-      border-radius: 10px;
+      @include AplySize(25em, 100vw, transparent);
+      // margin-left: 30vw;
       display: flex;
       align-items: center;
+      justify-content: center;
 
+      img {
+        position: absolute;
+        font-size: 10em;
+        left: 75%;
+        bottom: 1.5em;
+      }
       .project1 {
         padding: 0 5rem 0 5rem;
+        border-radius: 10px;
         position: relative;
-        img {
-          font-size: 10em;
-          // font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include AplySize(20em, 20em, rgb(56, 56, 56));
 
-          // position: absalute;
-          margin-left: 90%;
-          margin-top: -50%;
-        }
         .proj-name {
-          padding-bottom: 1rem;
+          position: absolute;
+          top: 2em;
+          // padding-bottom: 1rem;
           @include AplyFont(3em, white, bold, $font-family);
         }
         .proj-desc {
+          position: relative;
+          top: 2.5em;
+          padding-left: 1.3em;
           @include AplyFont(1em, white, normal, $font-family);
         }
       }
