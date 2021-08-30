@@ -8,6 +8,7 @@ export default function App() {
   gsap.registerPlugin(ScrollTrigger);
   const panels = useRef([]);
   const panelsContainer = useRef();
+  const textEffect = useRef(null);
 
   const createPanelsRefs = (panel, index) => {
     panels.current[index] = panel;
@@ -29,10 +30,26 @@ export default function App() {
       },
     });
   }, []);
+  useEffect(() => {
+    gsap.from(textEffect.current, {
+      duration: 1,
+      opacity: 0,
+      x: -100,
+      delay: 0.5,
+      // scrub: 1,
+      // pin: true,
+      ease: "power1.in",
+      scrollTrigger: {
+        trigger: textEffect.current,
+      },
+    });
+  }, []);
   return (
     <div className="project-sec">
       <div className="container" ref={panelsContainer}>
-        <div className="title">My Projects</div>
+        <div className="title" ref={textEffect}>
+          My Projects
+        </div>
         <div className="semi-circle"></div>
         <div className="all-panel">
           <section className="panel blue" ref={(e) => createPanelsRefs(e, 0)}>

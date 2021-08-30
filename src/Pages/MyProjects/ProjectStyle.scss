@@ -13,8 +13,9 @@ $font-family: "Poppins", sans-serif;
 
     .title {
       // position: absolute;
+      // opacity: 0;
       top: 0;
-      @include AplyFont(10rem, #ffffffde, bold, $font-family);
+      @include AplyFont(10rem, rgb(255, 255, 255), bold, $font-family);
       // text-shadow: -1px 0 #d0d0d0, 0 1px #d0d0d0, 1px 0 #d0d0d0, 0 -1px #d0d0d0;
       margin-left: 0.3em;
       padding-top: 0.3em;

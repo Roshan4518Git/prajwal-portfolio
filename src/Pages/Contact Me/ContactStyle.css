@@ -1,0 +1,94 @@
+.contactPage {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1b1b1c;
+  position: relative;
+}
+
+.contactPage .heading {
+  font-size: 10rem;
+  color: white;
+  font-weight: margin-top;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  left: 10%;
+}
+
+.contactPage .headingMask {
+  content: "";
+  position: absolute;
+  background-color: #1b1b1c;
+  height: 9em;
+  top: 9.3em;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+}
+
+.contactPage .specification {
+  position: absolute;
+  height: 10em;
+  width: 25em;
+  background-color: transparent;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: thin;
+  font-family: "Poppins", sans-serif;
+  right: 25%;
+  bottom: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactPage .specification .techs li {
+  color: #cecece;
+  font-size: medium;
+  line-height: 1.5;
+  list-style-type: none;
+}
+
+.contactPage .specification .line {
+  background-color: rgba(255, 255, 255, 0.562);
+  border: 0.5px solid rgba(255, 255, 255, 0.562);
+  height: 6em;
+  margin-top: 8%;
+  margin-right: 0.5em;
+}
+
+.contactPage .specification .owner {
+  padding-left: 3rem;
+}
+
+.contactPage .specification .owner .developer {
+  color: #cecece;
+  font-size: medium;
+}
+
+.contactPage .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  list-style-type: none;
+  font-size: 1.3rem;
+  color: #c7c6c6;
+  font-weight: thin;
+  font-family: "Poppins", sans-serif;
+  left: 10%;
+  bottom: 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactPage .footer li {
+  padding: 1em;
+}
+
+.contactPage img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+/*# sourceMappingURL=ContactStyle.css.map */
